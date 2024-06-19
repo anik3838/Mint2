@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f6efe7;
+}
+
+.banner2{
+    width: 100%;
+    position: relative;
+    background-image:url(./pic/Inner-Hero-v2__ScaleMaxWidthWzE5MjBd.jpg);  
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    background-repeat: no-repeat;
+
+    
+}
+
+
+menu ul{
+    list-style: none;
+    z-index: 111;
+
+}
+menu ul li{
+    display: inline-block;
+    float: right;
+    
+}
+menu ul li a{
+    text-decoration: none;
+    padding-left: 25px;
+    text-align: right;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #83DEB2;
+    position: relative;
+   
+}
+menu ul li a::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-left: 10px solid #83DEB2;
+    height: 0px;
+    left: 50%;
+    border-radius: 5px;
+    top: -45px;
+    transition: all 200ms ease-in-out;
+    
+}
+menu ul li a:hover{
+    color: #83DEB2;
+}
+
+menu ul li a:hover::after{
+    height: 28px;
+}
+
+.we h1{
+    font-family: "Habibi", serif;
+    margin-top: 200px;
+    font-size: 65px;
+    color: #83DEB2;
+}
+
+
+
+
+/* Main section css start here================= */
+
+.main_section{padding-top: 80px;}
+.title{
+
+}
+.title h1{
+    
+font-size: 55px;
+font-family: "Habibi", serif;
+    
+line-height: 62px;
+    
+margin-bottom: 22px;
+}
+.content_info{
+
+}
+.content_info ul{}
+.content_info ul li{}
+.content_info ul li a{
+
+text-decoration: none;
+
+color: black;
+
+font-size: 17px;
+
+line-height: 26px;
+}
+.content_img{
+
+}
+.content_img img{
+
+}
+.all_border{
+    border-bottom: 2px solid black;
+    padding-bottom: 80px;
+}
+
+/* button css start here========================================= */
+.more_btn span{
+
+margin-left: 36px;
+}
+.more_btn{
+
+}
+.more_btn a{
+
+}
+.more_button{
+
+padding: 18px 25px;
+
+border: none;
+
+color: #000;
+
+position: relative;
+
+font-size: 24px;
+
+background: transparent;
+
+z-index: 11;
+
+margin-top: 10px;
+}
+.more_button::after{
+    content: '';
+    background-color: #c6f7ea;
+    top: 0;
+    right: 0;
+    width: 72px;
+    height: 100%;
+    position: absolute;
+    border-radius: 36px;
+    z-index: -1;
+    box-shadow: 0px 3px 6px rgba(2, 128, 101, 0.15);
+}
+.more_button:hover.more_button::after{
+    width: 100%;
+    transition: .2s ease-in-out;
+}
+.more_btn i{
+    font-size: 25px;
+    color: black;
+}
+/* button css end here========================================= */
+
+/* work section css start here============================ */
+
+.work_section{
+    padding: 80px;
+    text-align: center;
+}
+.work_title{
+
+}
+.work_title h1{
+    font-size: 55px;
+    font-family: "Habibi", serif;
+        
+    line-height: 62px;
+        
+    margin-bottom: 22px;
+}

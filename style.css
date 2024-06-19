@@ -1,0 +1,772 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    width: 100%;
+    position: relative;  
+    height: 110vh;
+    overflow: hidden;
+
+    
+}
+.banner::after{
+    content: '';
+    height: 111vh;
+    width: 100%;
+    background: rgba(2, 128, 101, 0.8);
+    position: absolute;
+    opacity: .9;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+video{
+    position: absolute;
+    z-index: -111;
+
+}
+.logo{
+    z-index: 111;
+}
+menu ul{
+    list-style: none;
+    z-index: 111;
+
+}
+menu ul li{
+    display: inline-block;
+    float: right;
+    
+}
+menu ul li a{
+    text-decoration: none;
+    padding-left: 25px;
+    text-align: right;
+    font-family: "Rubik", sans-serif;
+    font: 15px;
+    font-weight: 600;
+    color: #83DEB2;
+    position: relative;
+   
+}
+menu ul li a::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-left: 10px solid #83DEB2;
+    height: 0px;
+    left: 50%;
+    border-radius: 5px;
+    top: -45px;
+    transition: all 200ms ease-in-out;
+    
+}
+menu ul li a:hover{
+    color: #83DEB2;
+}
+
+menu ul li a:hover::after{
+    height: 28px;
+}
+
+.acc{
+    font-size: 65px;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    color: #83DEB2;
+    line-height: 90px;
+    margin-top: 10%;
+}
+.acc span{
+    font-family: "Benne", sans-serif;
+}
+.our{
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.button1{
+    padding: 25px 35px;
+    transition: .3s ease-in-out;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: "Habibi", serif;
+    border: 1px solid #ffff;
+    margin-left: 40px;
+ 
+}
+.button1:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+    
+  
+}
+
+.button1 i{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.button2{
+    padding: 25px 35px;
+    transition: .3s ease-in-out;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: "Habibi", serif;
+    border: 1px solid #ffff;
+    margin-left: 40px;
+ 
+}
+.button2:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+    
+  
+}
+
+.button2 i{
+    margin-left: 20px;
+    font-size: 20px;
+}
+/* Banner END  */
+
+
+.body{
+    padding-top: 80px;
+}
+.text h1{
+    font-family: "Habibi", serif;
+    font-size: 48px;
+    color: black;
+    line-height: 60px;
+    font-weight: 500;
+}
+.text p{
+    font-family: "Rubik", sans-serif;
+    color: black;
+    /* margin-top: 20px; */
+}
+.line{
+    margin-top: -50px;
+}
+
+.body2{
+    background: url(./pic/circle-light-top-opt.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100px; */
+    overflow: hidden;
+}
+.body3{
+    background: url(./pic/circle-light-bottom-opt.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100px; */
+    overflow: hidden;
+}
+.high{
+    height:11vw !important;
+}
+.work{
+    background-color: #83DEB2;
+    
+}
+
+.work h2{
+    font-family: "Habibi", serif;
+    font-size: 55px;
+    text-align: center;
+    color: black;
+    width: 70%;
+    font-weight: 500;
+    margin-left: 15%;
+
+    
+}
+.logo{
+    text-align: center;
+}
+.logo h3{
+    color: black;
+    font-family: "Habibi", serif;
+    font-weight: 600;
+    margin: 20px 0 10px;
+}
+.logo p{
+    color: black;
+    font-family: "Rubik", sans-serif;
+
+}
+.work .we{
+    font-family: "Habibi", serif;
+    font-size: 50px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    margin: 150px 0 80px;
+}
+.new{
+
+    position: relative;
+    overflow: hidden;
+    border-radius: 180px;  
+}
+.new::after{
+    content: '';
+    position: absolute;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+   
+}
+.new:hover::after{
+    opacity: 0.8;
+    transition: .3s ease-in-out;
+    
+ 
+
+}
+.top img{
+    border-radius: 180px;
+    transition: .5s ease-in-out;
+    
+}
+.top img:hover{
+    transform: scale(1.2) !important;
+    transition: .5s ease-in-out;
+    z-index: 1;
+
+}
+
+
+.text2 h1{
+    font-family: "Habibi", serif;
+    font-size: 55px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 150px;
+    line-height: 60px;
+}
+.text2 p{
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 20px;
+}
+
+.owl-item img{
+    width:60% !important ;
+}
+
+.owl-stage{
+    display: flex;
+    align-items: center;
+}
+
+
+button.owl-prev {
+    margin-top: -100px;
+    margin-left: -70px;
+    display: block;
+    background: rgb(255, 255, 255) !important;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    border-radius: 50%;
+    float: left;
+}
+.owl-prev span {
+    font-size: 47px;
+    position: absolute;
+    top: -6px;
+    left: 27px;
+}
+
+.owl-next{
+    margin-top: -100px;
+    margin-left: -70px;
+    display: block;
+    background: rgb(255, 255, 255) !important;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    border-radius: 50%;
+    float: right;
+    position: relative;
+  
+}
+.owl-next span {
+    font-size: 47px;
+    position: absolute;
+    top: -6px;
+    left: 27px;
+}
+
+.text3 h3{
+    font-family: "Habibi", serif;
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 20%;
+    line-height: 40px;
+    width: 60%;
+}
+
+.text3 p{
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 20px;
+    width: 60%;
+    margin-left: 20%;
+
+}
+
+.text4 p{
+    color: #028065;
+    font-family: "Rubik", sans-serif;
+    margin-top: 150px;
+    font-size: 20px;
+}
+
+.text4 h1{
+    font-family: "Habibi", serif;
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    
+}
+.text4 h1:hover{
+    color: #83DEB2;
+    cursor: pointer;
+}
+
+.inside{
+    margin-top: 150px;
+}
+.text5 {
+    margin-top: 40px;
+}
+.text5 h2{
+    color: #000;
+    font-family: "Habibi", serif;
+    font-weight: 500;
+    font-size: 45px;
+}
+.text5 p{
+    color: #000;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.see{
+    padding: 25px 35px;
+    transition: .3s ease-in-out;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: "Habibi", serif;
+    border: 1px solid #c6f7ea;
+    background: #c6f7ea;
+    margin-left: 0;
+    margin-top: 30px;
+ 
+}
+.see:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+    
+  
+}
+
+.see i{
+    margin-left: 15px;
+}
+.image{
+    background-image: url(./pic/poster-inside-minds-carl-davidson__FillWzE2MDAsOTAwXQ.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+}
+.play{
+
+}
+.but img{
+    width: 200px;
+    padding: 0;
+}
+.but2 img {
+    position: absolute;
+    top: 48px;
+    animation: button 6s linear infinite;
+}
+
+@keyframes button {
+
+    form{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+
+.body4{
+    background: url(./pic/circle-dark-top-opt.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100px; */
+    overflow: hidden;
+    margin-top: 150px;
+}
+
+footer{
+    background: #028065;
+
+}
+hr{
+
+   border-top: 2px solid #20e6bb;
+   margin: 80px 0;
+}
+
+.icon{
+    display: flex;
+    margin-left: -28px;
+}
+.icon i{
+    cursor: pointer;
+    margin-left: 28px;
+    font-size: 30px;
+   color: #83deb2;
+   margin-top: 50px;
+}
+.last-menu ul{
+    list-style: none;
+    z-index: 111;
+    display: flex;
+    justify-content: end;
+
+}
+.last-menu ul li{
+    display: inline-block;
+
+
+ 
+    
+}
+.last-menu ul li a{
+    text-decoration: none;
+    padding-left: 25px;
+    text-align: right;
+    font-family: "Rubik", sans-serif;
+    font: 15px;
+    font-weight: 600;
+    color: #83DEB2;
+
+   
+}
+.address{
+    padding-top: 40px;
+}
+
+.address .num {
+    display: flex;
+    justify-content: end;
+    color: #83deb2;
+    font-family: "Rubik", sans-serif;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+.num i{
+    margin-left: 8px;
+}
+.copy{
+    display: flex;
+}
+
+.tex{
+    font-size: 13px;
+    font-family: "Rubik", sans-serif;
+    color: #83DEB2;
+    margin-top: 70px;
+    cursor: pointer;
+}
+.tex1{
+    font-size: 13px;
+    font-family: "Rubik", sans-serif;
+    color: #83DEB2;
+    margin-top: 69px;
+    text-align: end;
+    cursor: pointer;
+
+}
+
+
+/* WHat  */
+
+body{
+    background-color: #f6efe7;
+}
+
+.banner2{
+    width: 100%;
+    position: relative;
+    background-image:url(./pic/Inner-Hero-v2__ScaleMaxWidthWzE5MjBd.jpg);  
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    background-repeat: no-repeat;
+
+    
+}
+
+
+menu ul{
+    list-style: none;
+    z-index: 111;
+
+}
+menu ul li{
+    display: inline-block;
+    float: right;
+    
+}
+menu ul li a{
+    text-decoration: none;
+    padding-left: 25px;
+    text-align: right;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #83DEB2;
+    position: relative;
+   
+}
+menu ul li a::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-left: 10px solid #83DEB2;
+    height: 0px;
+    left: 50%;
+    border-radius: 5px;
+    top: -45px;
+    transition: all 200ms ease-in-out;
+    
+}
+menu ul li a:hover{
+    color: #83DEB2;
+}
+
+menu ul li a:hover::after{
+    height: 28px;
+}
+
+.we h1{
+    font-family: "Habibi", serif;
+    margin-top: 200px;
+    font-size: 65px;
+    color: #83DEB2;
+}
+
+
+/* <!-- w_features section css start here==================== --> */
+
+.w_features{
+
+    padding: 80px 0;
+    }
+    .w_feature_heading{
+    
+    padding-bottom: 80px;
+    }
+    .w_feature_heading h1{
+    
+    font-family: 'GT Walsheim', sans-serif !important;
+    
+    font-size: 1.8rem;
+    
+    font-weight: bold;
+    
+    line-height: 1.4;
+    
+    text-align: center;
+    }
+    .w_f_item{
+    
+    }
+    .w_f_item:hover{
+        transform: scale(1.1);
+        transition: .3s ease-in-out;
+        color: #83DEB2;
+        
+    }
+    .w_f_item a:hover .w_f_title h2{
+        color: #83DEB2;
+
+    }
+    .w_f_item a{
+    
+    text-decoration: none;
+    }
+    .w_f_info{
+        width: 95%;
+        margin: auto;
+    }
+    
+    .w_f_image{
+    }
+    .w_f_image img{
+    
+    }
+    .w_f_title{
+    
+    }
+    .w_f_title h2{
+        
+    text-align: center;
+        
+    color: #000;
+        
+    font-size: 23px;
+        
+    font-weight: 700;
+        
+    padding-top: 18px;
+    }
+
+
+/* Main section css start here================= */
+
+.main_section{padding-top: 80px;}
+.title{
+
+}
+.title h1{
+    
+font-size: 55px;
+font-family: "Habibi", serif;
+    
+line-height: 62px;
+    
+margin-bottom: 22px;
+}
+.content_info{
+
+}
+.content_info ul{}
+.content_info ul li{}
+.content_info ul li a{
+
+text-decoration: none;
+
+color: black;
+
+font-size: 17px;
+
+line-height: 26px;
+}
+
+.all_border{
+    border-bottom: 2px solid black;
+    padding-bottom: 80px;
+}
+
+/* button css start here========================================= */
+.more_btn span{
+
+margin-left: 36px;
+}
+.more_btn{
+
+}
+.more_btn a{
+
+}
+.more_button{
+
+padding: 18px 25px;
+
+border: none;
+
+color: #000;
+
+position: relative;
+
+font-size: 24px;
+
+background: transparent;
+
+z-index: 11;
+
+margin-top: 10px;
+}
+.more_button::after{
+    content: '';
+    background-color: #c6f7ea;
+    top: 0;
+    right: 0;
+    width: 72px;
+    height: 100%;
+    position: absolute;
+    border-radius: 36px;
+    z-index: -1;
+    box-shadow: 0px 3px 6px rgba(2, 128, 101, 0.15);
+}
+.more_button:hover.more_button::after{
+    width: 100%;
+    transition: .2s ease-in-out;
+}
+.more_btn i{
+    font-size: 25px;
+    color: black;
+}
+/* button css end here========================================= */
+
+/* work section css start here============================ */
+
+.work_section{
+    padding: 80px;
+    text-align: center;
+}
+.work_title{
+
+}
+.work_title h1{
+    font-size: 55px;
+    font-family: "Habibi", serif;
+        
+    line-height: 62px;
+        
+    margin-bottom: 22px;
+}
